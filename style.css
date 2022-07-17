@@ -1,0 +1,66 @@
+
+
+.body{
+    font-family: 10em sans-serif;
+    margin: 0em;
+}
+.card-text{
+    font-size: large;
+    font-size: 2rem;
+    color: black;
+
+}
+.card {
+    height:300px;
+    
+
+    
+}
+.boton {
+    font-family: 'Poppins', sans-serif;
+    
+}
+.title {
+    color:black;
+    height: 400px;
+    background-image:url(images/BG-PLTNT.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.carousel-item {
+    color:black;
+    background-size:cover;
+    background-position:center center;
+    max-height: 100%;
+    position: center;
+}
+p{
+    color:burlywood;
+    font-family: 'Poppins', sans-serif;}
+
+.divider {
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+.section_class{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container{ 
+    display: grid;
+
+}
+.image_card{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.esmerilado-img{
+    width: 100%;
+    object-fit: cover;
+}
