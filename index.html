@@ -42,13 +42,14 @@
       <!-- Gutters are the padding between your columns, used to responsively space
          and align content in the Bootstrap grid system. -->
     <body>
-        <header class="site-header sticky-top p-0"> 
+        <header class="site-header sticky-top p-0">
+
           <nav class="navbar navbar-light bg-light p-0">
             <div class="container-fluid p-0">
-              <a class="navbar-brand justify-content-center" href="https://c.tenor.com/nSYElkmFeEEAAAAd/enano.gif" >
+              <a class="navbar-brand" href="https://c.tenor.com/nSYElkmFeEEAAAAd/enano.gif" >
               <embed src="SVG/Icono_Ploteosnort.svg" alt="Icon_Ploteosnort" width="80" height="80" style="padding-left: 1rem; padding-top: 0%; padding-bottom: 0%;"" class="d-inline-block align-text-top">
               </a>
-            <ul class="nav justify-content-center">
+            <ul class="nav d-none d-md-flex">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
@@ -74,6 +75,29 @@
                 <a class="nav-link" href="#Contacto" tabindex="-1" aria-disabled="true">Contacto</a>
               </li>
             </ul>
+
+            <li class="btn-group dropstart d-block d-md-none">
+              <a class="nav-link " href="#" id="nav_item_menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/png/Recurso 9.png" alt="menu">
+              </a>
+              <ul class="dropdown-menu dropdown-menu" aria-labelledby="nav_item_menu">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link active" aria-current="page" href="#Catalogo">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Lista de Precios">Lista de Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Trabajos">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                </li>
+              </ul>
+            </li>
           </nav>
           </div>
         </header>
@@ -87,12 +111,12 @@
                   </div>
                   <div class="carousel-item">
                     <img src="images/grando-400px.jpg" class="d-block w-100" alt="Error 420, Ploteos Nort ya lo soluciona">
-                    <div class="carousel-caption d-block bg-light bg-opacity-50">
+                    <div class="carousel-caption d-none d-md-block bg-light bg-opacity-50">
                       
                       <h2 class="border-bottom d-inline" style="border:botton; color: black;">
                         SOBRE NOSOTROS
                       </h2>
-                      <p class="fs-3" style="color:rgb(44, 43, 37);">
+                      <p class="fs-3 " style="color:rgb(44, 43, 37);">
                         Somos una grafica dedicada a la carteleria y publicidad. Ofrecemos servicios de impresión, ploteo, rotulacion y colocacion de carteles.
                       </p>
                     </div>
@@ -122,11 +146,11 @@
       <!-- CATALOGO -->
 
       <div class="divider"></div>
-        <section class="section_class py-0" style="background-image: url('SVG/backgrond_sections.svg');background-attachment: fixed; background-size: 100%;" >
+        <section class="section_class py-0" id="Catalogo" style="background-image: url('SVG/backgrond_sections.svg');background-attachment: fixed; background-size: 100%;" >
            
 
-          <div class="container px-4 pt-5" id="Catalogo" style="background-color: white;">
-            <h1 class="pb-2 border-bottom text-center">CATALOGO</h1>
+          <div class="container px-4 pt-5" id="" style="background-color: white;">
+            <h1 class="pb-2 border-bottom text-center">CATÁLOGO</h1>
 
             <!--Lona -->
             <div class="container px-4 py-5" id="Lonas">
@@ -806,35 +830,70 @@
         <div class="container py-5"  id="Contacto">
 
           <h1 class="pb-2 border-bottom text-center">CONTACTO</h1>
-          <div class="row" class="">
-            <div class="col-1 text-end">
-              <embed src="/SVG/envelope.svg" alt="..." width="32" height="32">
-            </div>
-            <div class="col p-1 ">
-              <p class="p-1 m-0">
-                Mandanos un mail a ploteosnort@gmail.com pidiendo tu presupuesto.
+          <div class="d-none d-md-block">
+           
+            <div class="row p-3">
+              <div class="col-6 text-end border-end">
+                <embed src="/SVG/telephone.svg" alt="..." width="32" height="32">
+              </div>
+              <div class="col-6 p-1 ">
+                <p class="p-1 m-0">
+                  Escribinos por whatsapp (0351) <a></a>
                 </p>
+              </div>
+            </div>
+            <div class="row p-3 vertical-align-center" class="">
+              <div class="col-6 text-end border-end d-inline" >
+                <img src="/SVG/envelope.svg" class="text-center" width="32" height="32">
+              </div>
+              <div class="col-6 p-1">
+                <p class="p-1 m-0">
+                  Mandanos un mail a ploteosnort@gmail.com pidiendo tu presupuesto.
+                  </p>
+              </div>
+            </div>
+            <div class="row p-1">
+              <div class="col-6 text-end border-end">
+                <embed src="/SVG/instagram.svg" alt="..." width="32" height="32">
+              </div>
+              <div class="col-6 col-sm-6 p-1">
+                <p class="p-1 m-0">
+                  Nos podes encontrar en instagram como @ploteosnort 
+                </p>
+              </div> 
             </div>
           </div>
-          <div class="row p-1">
-            <div class="col-1 text-end">
-              <embed src="/SVG/telephone.svg" alt="..." width="32" height="32">
+          <div class="d-block d-md-none">
+            <div class="row p-3" class="">
+              <div class="col-12 text-center">
+                <img src="/SVG/envelope.svg" alt="..." width="32" height="32">
+              </div>
+              <div class="col-12 p-1 ">
+                <p class="p-1 m-0 text-center">
+                  Mandanos un mail a ploteosnort@gmail.com pidiendo tu presupuesto.
+                  </p>
+              </div>
             </div>
-            <div class="col p-1 ">
-              <p class="p-1 m-0">
-                Escribinos por whatsapp (0351) <a></a>
-              </p>
+            <div class="row p-3">
+              <div class="col-12 text-center">
+                <embed src="/SVG/telephone.svg" alt="..." width="32" height="32">
+              </div>
+              <div class="col-12 p-1 ">
+                <p class="p-1 m-0 text text-center">
+                  Escribinos por whatsapp (0351) <a></a>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row p-1">
-            <div class="col-12 col-sm-6 text-end">
-              <embed src="/SVG/instagram.svg" alt="..." width="32" height="32">
+            <div class="row p-3">
+              <div class="col-12 col-sm-6 text-center">
+                <embed src="/SVG/instagram.svg" alt="..." width="32" height="32">
+              </div>
+              <div class="col-12 col-sm-6 p-1">
+                <p class="p-1 m-0 text-center">
+                  Nos podes encontrar en instagram como @ploteosnort 
+                </p>
+              </div> 
             </div>
-            <div class="col-12 col-sm-6 p-1">
-              <p class="p-1 m-0">
-                Nos podes encontrar en instagram como @ploteosnort 
-              </p>
-            </div> 
           </div>
         </div>
       </section>
