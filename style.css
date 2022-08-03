@@ -1,21 +1,28 @@
 
 
 .body{
-    font-family: 10em sans-serif;
-    margin: 0em;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 .card-text{
+    font-family: 'Ubuntu', sans-serif;
     font-size: large;
     font-size: 2rem;
     color: black;
 
 }
 .card {
+    font-family: 'Ubuntu', sans-serif;
     height:300px;
     width:auto ;
     
+}
 
+.contact-txt{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
     
+
 }
 .boton {
     font-family: 'Poppins', sans-serif;
